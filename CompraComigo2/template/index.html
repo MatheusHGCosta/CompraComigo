@@ -145,6 +145,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hilios/jQuery.countdown@2.2.0/dist/jquery.countdown.min.js"></script>
 
 
     <!-- Additional Scripts -->
@@ -172,7 +173,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <script>
       var produto = new Produto();
-      for (var i = 1; i < 7; i++) {
+      for (var i = 1; i < 9; i++) {
         produto.GetProduto(i).then((res) => {
           $("#produtos").append(getProductDiv(res))
         }).catch(e => console.log(e));
